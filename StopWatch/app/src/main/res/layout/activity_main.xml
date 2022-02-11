@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:theme="@style/ThemeOverlay.Material3.Dark"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    >
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="92sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/time_view"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickStart"
+
+        tools:ignore="UsingOnClickInXml" /><Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/stop_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/start_button"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickStop"
+
+    tools:ignore="UsingOnClickInXml" /><Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:id="@+id/reset_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/stop_button"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickReset"
+
+    tools:ignore="UsingOnClickInXml" />
+</RelativeLayout>
